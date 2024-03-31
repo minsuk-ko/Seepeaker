@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center_vertical"
+    android:gravity="center_vertical"
+    android:orientation="vertical">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardBackgroundColor="#ffffff"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="10dp"
+        app:cardUseCompatPadding="true"
+        app:strokeColor="#000000"
+        app:strokeWidth="4dp">
+
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#eee">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:paddingLeft="16dp"
+                    android:paddingRight="16dp"
+                    android:background="#fff"
+                    android:layout_marginBottom="1dp">
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:text="발음 방법"
+                            android:layout_gravity="center"
+                            android:id="@+id/cardViewTitle"
+                            android:textSize="36dp" />
+                    </LinearLayout>
+
+                </RelativeLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/reviewNoteReset"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="오답노트 초기화 :" />
+
+                <Button
+                    android:id="@+id/buttonReviewNoteReset"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:clickable="true"
+                    android:text="초기화하기" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#ddd">
+
+                <RelativeLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="16dp"
+                    android:background="#fff"
+                    android:layout_marginBottom="1dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginBottom="5dp"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/textTitleConsonant"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+
+                                android:text="자음 관련 :" />
+
+                            <Button
+                                android:id="@+id/buttonConsonantImageOpen"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="35dp"
+                                android:clickable="true"
+                                android:text="보기" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginBottom="5dp"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/textTitleVowe"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="모음 관련 :" />
+
+                            <Button
+                                android:id="@+id/buttonVoweImageOpen"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="35dp"
+                                android:clickable="true"
+                                android:text="보기" />
+                        </LinearLayout>
+
+                        <com.google.android.material.chip.ChipGroup
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+                        </com.google.android.material.chip.ChipGroup>
+
+                    </LinearLayout>
+                </RelativeLayout>
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="14dp"
+                android:paddingRight="14dp"
+                android:id="@+id/rl_image"/>
+            <ImageView
+                android:id="@+id/imageConsonant"
+                android:src="@drawable/pronunciation_consonant"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                />
+            <TextView
+                android:id="@+id/textConsonant"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="먼저 폐쇄음은, 허파에서 나온 공기의 흐름이 입술, 잇몸, 연구개 등의 위치에서 완전 막히면서 나는 언어음이다.
+                 그리고 파찰음은 닿소리를 발음할때 폐쇄를 형성해서 공기의 흐름을 막핬다가 완전히 파열하지 않고 조금씩 개방해서 좁은 틈 사이로 공기를 통과시키면서 내는 소리이다.
+                  그리고 마찰음은 닿소리를 발음할때 공기가 좁은 틈을 통과되면서 발생하는 마찰을 이용해서 내는 소리이다.
+                  유음은 조음할때 공기의 흐름을 적게 막하거 내는 닿소리이다.
+                   비음은 연구개를 낮춤으로써 공기가 코로 나가게 하면서 내는 언어음이다."
+                android:visibility="gone"/>
+
+            <ImageView
+                android:id="@+id/imageVowe"
+                android:src="@drawable/pronunciation_vowe"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/textVowe"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="위의 표와 같이, 혀의 위치와 입술 모양을 잘 만들어 내어 발음을 잘 해낼 수 있다.
+                단모음 중에서, 혀의 최고점의 위치에 따라 고모음, 중모음, 저모음으로 나눌 수 있고,
+                 전설 모음은 혀의 앞쪽에서 발음되는 모음이고, 후설 모음은 발음할 때 혀의 뒷쪽에서 발음되는 모음이다.
+                 자세한 사항은 표를 참고하면서 발음 해 보자."
+                android:visibility="gone"/>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#ddd">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:background="#fff"
+                    android:layout_marginBottom="1dp"
+                    android:paddingLeft="16dp"
+                    android:paddingRight="16dp">
+                </RelativeLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</LinearLayout>

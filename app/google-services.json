@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "352064448407",
+    "project_id": "seepeaker-8c44e",
+    "storage_bucket": "seepeaker-8c44e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:352064448407:android:3d82f661c79502047e06d2",
+        "android_client_info": {
+          "package_name": "com.example.seepeaker"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD7osZGFf4Xpx_Xz1bFHNvQt7pJ0V-66WU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

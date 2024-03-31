@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <!--item (사용 안함, 사용을 원할시 앞뒤의 주석 부분을 지울것)
+        android:id="@+id/alarm"
+        android:enabled="true"
+        android:icon="@drawable/alarm_symbol"
+        android:title="알림"
+        app:showAsAction="always"/-->
+
+    <!--item (사용 안함, 사용을 원할시 앞뒤의 주석 부분을 지울것)
+        android:id="@+id/settings"
+        android:enabled="false"
+        android:icon="@drawable/settings_symbol"
+        android:title="설정"
+        app:showAsAction="always"/-->
+
+    <item
+        android:id="@+id/login"
+        android:enabled="true"
+        android:icon="@drawable/user_symbol"
+        android:title="로그인"
+        app:showAsAction="ifRoom"/>
+
+    <item
+        android:id="@+id/logout"
+        android:enabled="true"
+        android:icon="@drawable/user_logout_symbol"
+        android:title="로그아웃"
+        app:showAsAction="ifRoom"/>
+
+</menu>

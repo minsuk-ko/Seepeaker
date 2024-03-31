@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="user_info_arrays">
+        <item>이메일 주소: </item>
+        <item>오답 노트 보기 </item>
+        <item>평균 시험 점수: </item>
+        <item>최고 점수: </item>
+        <item>최저 점수: </item>
+        <item>총 시험 횟수: </item>
+    </array>
+
+    <array name="user_info_arrays2">
+        <item>abc123@gmail.com</item>
+        <item>오답 노트를 보려면 이곳을 눌러주세요</item>
+        <item>32회</item>
+        <item>85점</item>
+        <item>40점</item>
+        <item>60점</item>
+        <item>150회</item>
+        <item>300회</item>
+        <item>3번</item>
+        <item>30회</item>
+        <item>45개</item>
+        <item>15번</item>
+    </array>
+
+    <array name="review_notes_arrays">
+        <item>송편</item>
+        <item>가계부</item>
+        <item>수수료</item>
+        <item>김치찌개</item>
+        <item>시청자</item>
+        <item>식료품</item>
+        <item>식생활</item>
+        <item>신제품</item>
+        <item>아리랑</item>
+        <item>안줏거리</item>
+        <item>애프터서비스</item>
+        <item>강수량</item>
+    </array>
+
+    <array name="review_notes_arrays2">
+        <item>1번</item>
+        <item>7번</item>
+        <item>11번</item>
+        <item>2번</item>
+        <item>4번</item>
+        <item>21번</item>
+        <item>22번</item>
+        <item>1번</item>
+        <item>5번</item>
+        <item>300번</item>
+        <item>100번</item>
+        <item>100번</item>
+    </array>
+
+    <array name="test_result_arrays">
+        <item>정답</item>
+        <item>오답</item>
+        <item>정답</item>
+        <item>오답</item>
+        <item>정답</item>
+        <item>오답</item>
+        <item>정답</item>
+        <item>오답</item>
+        <item>정답</item>
+        <item>오답</item>
+        <item>정답</item>
+        <item>정답</item>
+    </array>
+
+</resources>

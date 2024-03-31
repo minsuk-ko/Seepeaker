@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_checked="true">
+        <!-- Use a transparent color or fully transparent drawable for the selected state -->
+        <color android:color="@android:color/white" />
+    </item>
+    <item>
+        <!-- Use a transparent color or fully transparent drawable for the default state -->
+        <color android:color="@android:color/white" />
+    </item>
+</selector>
